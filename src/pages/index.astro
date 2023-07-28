@@ -1,30 +1,110 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import LandingHeader from "../components/LandingHeader.astro";
-import HeroSection from "../components/HeroSection.astro";
-import ChargeSection from "../components/ChargeSection.astro";
+import Section2 from "../components/Section2.astro";
 ---
 
 <Layout title="Tesla">
   <LandingHeader />
 
   <main
-    class="snap-y snap-mandatory relative w-full h-screen overflow-auto scroll"
+    class="snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth"
   >
     <div class="snap-center">
-      <HeroSection />
+      <Section2
+        color="white"
+        title="Experience Tesla"
+        subtitle="Starting at $32,740 After Federal Tax Credit"
+        button1="Explore Inventory"
+        vid="/video.webm"
+      />
     </div>
 
     <div class="snap-center">
-      <ChargeSection />
+      <Section2
+        color="black"
+        title="Model 3"
+        subtitle="Starting at $32,740 After Federal Tax Credit"
+        button1="Explore Inventory"
+        button2="Custom Order"
+        img="/Model3.avif"
+      />
     </div>
 
     <div class="snap-center">
-      <HeroSection />
+      <Section2
+        color="black"
+        title="Model Y"
+        subtitle="Starting at $40,240 After Federal Tax Credit"
+        button1="Explore Inventory"
+        button2="Custom Order"
+        img="/Model-Y.avif"
+      />
     </div>
 
     <div class="snap-center">
-      <HeroSection />
+      <Section2
+        color="black"
+        title="Model S"
+        subtitle="Explore Inventory"
+        button1="Custom Order"
+        button2="Demo Drive"
+        img="/Model-S.avif"
+      />
+    </div>
+
+    <div class="snap-center">
+      <Section2
+        color="black"
+        title="Model X"
+        subtitle="Explore Inventory"
+        button1="Custom Order"
+        button2="Demo Drive"
+        img="/Model-X.avif"
+      />
+    </div>
+
+    <div class="snap-center">
+      <Section2
+        color="black"
+        title="Solar Panels"
+        subtitle="Schedule a Virtual Consultation"
+        button1="Order Now"
+        button2="Learn More"
+        img="/SolarPanels.avif"
+      />
+    </div>
+
+    <div class="snap-center">
+      <Section2
+        color="black"
+        title="Solar Roof"
+        subtitle="Schedule a Virtual Consultation"
+        button1="Order Now"
+        button2="Learn More"
+        img="/SolarRoof.avif"
+      />
+    </div>
+
+    <div class="snap-center">
+      <Section2
+        color="black"
+        title="Powerwall"
+        subtitle="Schedule a Virtual Consultation"
+        button1="Order Now"
+        button2="Learn More"
+        img="/Powerwall.avif"
+      />
+    </div>
+
+    <div class="snap-center">
+      <Section2
+        color="black"
+        title="Accessories"
+        subtitle="Schedule a Virtual Consultation"
+        button1="Order Now"
+        img="/Accessories.avif"
+      />
     </div>
   </main>
 </Layout>
